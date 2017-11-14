@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  dddbrisbane:
+    image: dddbrisbane
+    build:
+      context: ./DDDBrisbane
+      dockerfile: Dockerfile
+  pdf:
+    image: openlabs/docker-wkhtmltopdf-aas
