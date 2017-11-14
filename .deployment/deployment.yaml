@@ -1,0 +1,23 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: dddbrisbane-dev
+spec:
+  replicas: 2
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        service: dddbrisbane
+        env: development
+    spec:
+      containers:
+      - image: thiago.azurecr.io/dddbrisbane:1.0.5
+        name: dddbrisbane
+        ports:
+        - containerPort: 80
+        resources: {}
+      imagePullSecrets:
+      - name: regsecret
+      restartPolicy: Always
+status: {}

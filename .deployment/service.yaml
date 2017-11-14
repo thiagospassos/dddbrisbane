@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: dddbrisbane-dev
+  labels:
+    name: dddbrisbane
+spec:
+  selector:
+    service: dddbrisbane
+    env: development
+  type: LoadBalancer
+  ports:
+  - port: 80
+    targetPort: 80
+    protocol: TCP
