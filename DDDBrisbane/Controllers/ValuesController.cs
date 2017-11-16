@@ -24,7 +24,9 @@ namespace DDDBrisbane.Controllers
         [HttpGet]
         public IEnumerable<string> Get()
         {
-            return new string[] { "ddd", "brisbane", "is", "awesome" };
+            return new string[] {
+                "Hope","You","Guys","Are","Not","Sleeping"
+             };
         }
 
         // GET api/values/5
