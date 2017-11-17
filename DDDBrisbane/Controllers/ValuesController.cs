@@ -25,7 +25,7 @@ namespace DDDBrisbane.Controllers
         public IEnumerable<string> Get()
         {
             return new string[] {
-                "Hope","You","Guys","Are","Not","Sleeping"
+                "Hope","You","Guys","Are","Not","Sleeping","At","SSW"
              };
         }
 
