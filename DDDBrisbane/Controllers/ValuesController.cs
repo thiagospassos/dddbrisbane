@@ -25,7 +25,7 @@ namespace DDDBrisbane.Controllers
         public IEnumerable<string> Get()
         {
             return new string[] {
-                "DDD","Brisbane","Is","Awesome"
+                "Sydney","Is","Awesome"
              };
         }
 
@@ -33,7 +33,7 @@ namespace DDDBrisbane.Controllers
         [HttpGet("pdf")]
         public async Task<IActionResult> GetPdf()
         {
-            var stream = await _pdfClient.FromHtml("<body><p>Hello DDD Brisbane</p><p>Give me feedback for a chance to win an X Box One X One X</p></body>");
+            var stream = await _pdfClient.FromHtml("<body><p>Hello SYDNEY!!!</p></body>");
             var response = File(stream, "application/octet-stream", "file.pdf");
             return response;
         }
