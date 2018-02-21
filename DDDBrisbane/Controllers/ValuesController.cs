@@ -22,10 +22,11 @@ namespace DDDBrisbane.Controllers
 
         // GET api/values
         [HttpGet]
+
         public IEnumerable<string> Get()
         {
             return new string[] {
-                "Sydney","Is","Awesome"
+                "Sydney","Is","Amazing"
              };
         }
 
